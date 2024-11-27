@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма Регистрации</title>
+    <link rel="stylesheet" href="CSS\style.css">
+</head>
+<body>
+    <!-- начало Контейнера -->
+    <div class="container">
+        <h1>Регистрация</h1>
+        <!-- Регистрация -->
+        <form id="registrationForm">
+            <!-- Логин -->
+            <label for="regLogin">Логин:</label>
+            <input type="text" id="regLogin" required>
+            <!-- Имя -->
+            <label for="regFirstName">Имя:</label>
+            <input type="text" id="regFirstName" required>
+            <!-- Фамилия -->
+            <label for="regLastName">Фамилия:</label>
+            <input type="text" id="regLastName" required>
+            <!-- Пароль -->
+            <label for="regPassword">Пароль:</label>
+            <input type="password" id="regPassword" required>
+            <!-- Кнопка для проверки условий ввода -->
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <!-- Сообщение об успехе или каких-либо ошибок ввода -->
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
